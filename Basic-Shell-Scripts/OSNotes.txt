@@ -1,0 +1,3 @@
+cat a.c aa.c > output 2>&1
+If a.c exists and aa.c doesn't exist, the code of a.c will be put in output and 2>&1 means that redirect all STDErrs to where the STD output is going. 
+So, the error message that aa.c doesn't exist will go to output
